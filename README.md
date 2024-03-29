@@ -1,7 +1,7 @@
 //
 // @author Bogdanov Ilya
 //
-study(title="Market Cipher B", shorttitle="Cipher_B")
+study(title="Market Cipher B", shorttitle="Market Cipher B")
 n1 = input(10, "Channel Length")
 n2 = input(21, "Average Length")
 obLevel1 = input(60, "Over Bought Level 1")
