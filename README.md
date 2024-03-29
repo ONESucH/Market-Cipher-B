@@ -1,9 +1,7 @@
 //
 // @author Bogdanov Ilya
 //
-// If you use this code in its original/modified form, do drop me a note. 
-//
-study(title="Market Cipher B  Free version with Buy and sell", shorttitle="Cipher_B_free")
+study(title="Market Cipher B", shorttitle="Cipher_B")
 n1 = input(10, "Channel Length")
 n2 = input(21, "Average Length")
 obLevel1 = input(60, "Over Bought Level 1")
@@ -32,9 +30,6 @@ plot(wt2, style=area, color=blue, title="wt2", transp=10)
 plot(wt1-wt2, color=yellow, style=area, transp=0)
 plot(cross(wt1, wt2) ? wt2 : na, color =black, style = line, linewidth = 5)
 
-
 plot(cross(wt1, wt2) ? wt2 : na, color = (wt2 - wt1 > 0 ? red: lime) , style = circles, linewidth = 6)
 
-
-
-// barcolor(cross(wt1, wt2) ? (wt2 - wt1 > 0 ? black : yellow) : na)
+barcolor(cross(wt1, wt2) ? (wt2 - wt1 > 0 ? black : yellow) : na)
